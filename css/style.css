@@ -1,0 +1,13 @@
+﻿body {
+    font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+    color: #666666;
+    background: #3d85c6 none repeat-x scroll top left;
+}
+body {
+    background: url(https://www.capegynaecologist.co.za/wp-content/uploads/2017/07/top-vid.jpg) no-repeat center center fixed;
+    color: blue background-size: cover;
+}
+
+h1 {
+    color: blue
+}
