@@ -9,5 +9,19 @@ body {
 }
 
 h1 {
-    color: blue
+    color: blue;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+video {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /*border: 1px solid #666;*/
 }
