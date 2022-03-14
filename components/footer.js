@@ -3,7 +3,7 @@
 footerTemplate.innerHTML = `
   <style>
     footer {
-      height: 40px;
+      height: 30px;
       padding: 0 10px;
       list-style: none;
       display: flex;
@@ -34,7 +34,7 @@ footerTemplate.innerHTML = `
     }
     
     .social-row {
-      font-size: 20px;
+      font-size: 15px;
     }
     
     .social-row li a {
@@ -42,15 +42,18 @@ footerTemplate.innerHTML = `
     }
   </style>
   <footer>
-    <ul>
-      <li><a href="about.html">About</a></li>
+    <ul class="social-row">
+     <!--//  <li><a href="about.html">About</a></li>
       <li><a href="studio.html">Studio</a></li>
       <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <ul class="social-row">
-      <li><a href="https://github.com/my-github-profile"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://twitter.com/my-twitter-profile"><i class="fab fa-twitter"></i></a></li>
+    </ul> 
+    <ul class="social-row"> -->
+      <li>Ivory Key Productions - Copyright &copy; 2022 <li>
+<!--
+      <li><a href="https://github.com/my-github-profile">Facebook <i class="fab fa-github"></i></a></li>
+      <li><a href="https://twitter.com/my-twitter-profile">Twitter<i class="fab fa-twitter"></i></a></li>
       <li><a href="https://www.linkedin.com/in/my-linkedin-profile"><i class="fab fa-linkedin"></i></a></li>
+-->
     </ul>
   </footer>
 `;
