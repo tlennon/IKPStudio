@@ -1,4 +1,5 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
@@ -8,17 +9,16 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
+    <style>
+
+        p.mystyle {
+            padding: 20px;
+            line-height: 1:1;
+            font-size: x-large;
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
 </head>
-<style>
-
-    p {
-        padding: 20px;
-        line-height: 1:1;
-        font-size: x-large;
-        font-family: "Times New Roman", Times, serif;
-    }
-
-</style>
 <body>
     <header-component></header-component>
     <div class="container mt-3">
@@ -27,15 +27,16 @@
                 <img src="images/MyWebPic.JPG" class="img-thumbnail" alt="Cinque Terre" width="204" height="136">
             </div>
             <div class="col-sm-8">
-                <p><strong>Terrence Lennon</strong>
-                <br>
+                <p class="mystyle">
+                    <strong>Terrence Lennon</strong>
+                    <br>
                     <strong>1234 Main Street</strong> <br>
                     Somerset, NJ 08641<br>
                     Home: 732.633.1560
                 </p>
             </div>
         </div>
+        <p>A professional computer programmer, musician, songwriter, and producer.</p>
     </div>
-    <p>A professional computer programmer, musician, songwriter, and producer.</p>
 </body>
 </html>
