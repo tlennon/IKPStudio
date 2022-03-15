@@ -69,7 +69,7 @@ headerTemplate.innerHTML = `
     height: 80px; 
     margin-top: 20px; 
     padding: 0;
-    object-fit: fill ;
+    object-fit: cover ;
 }
 
   </style>
