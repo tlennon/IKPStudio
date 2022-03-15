@@ -48,14 +48,42 @@ headerTemplate.innerHTML = `
         padding: 25px;
         line-height: 15px;
         margin-top: -25px;
-
     }
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 30px; /* Should be removed. Only for demonstration */
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#img-logo {
+    width: 100px; 
+    height: 80px; 
+    margin-top: 20px; 
+    padding: 0;
+    object-fit: fill ;
+}
 
   </style>
   <header>
-    <div>
-        <h1>Ivory Key Productions</h1>
-        <h4>Audio Home Music Studio Services</h4>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img id="img-logo" src="/images/logo-transparent.png">
+            </div>
+            <div class="column">
+                   <h1>Ivory Key Productions</h1>
+                   <h4>Audio Home Music Studio Services</h4>
+            </div>
+        </div>
     </div>
     <nav>
       <ul>
