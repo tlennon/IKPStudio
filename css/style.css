@@ -33,6 +33,18 @@ h2.video {
     text-align: center;
 }
 
+a:active{
+    color:green;
+}
+
+/*a:visited{
+    color:darkred;
+}
+*/
+a:hover {
+    color: red;
+}
+
 /*Contact page information*/
 p.contact {
     padding: 20px;
@@ -61,3 +73,11 @@ img {
         transform: scale(1.1);
     }
 
+
+.year {
+    color: red;
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger;
+    font:bolder;
+    
+}
