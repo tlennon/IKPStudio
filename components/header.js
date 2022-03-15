@@ -53,7 +53,7 @@ headerTemplate.innerHTML = `
 .column {
   float: left;
   width: 50%;
-  padding: 20px;
+  padding: 10px;
   height: 30px; /* Should be removed. Only for demonstration */
 
 }
@@ -68,7 +68,7 @@ headerTemplate.innerHTML = `
     width: 100px; 
     height: 80px; 
     margin-top: 20px; 
-    padding: 0;
+    padding: 10;
     object-fit: cover ;
 }
 
@@ -77,7 +77,7 @@ headerTemplate.innerHTML = `
     <div class="container">
         <div class="row">
             <div class="column">
-                <img id="img-logo" src="~/images/logo.PNG">
+                <img id="img-logo" src="images/logo.PNG">
             </div>
             <div class="column">
                    <h1>Ivory Key Productions</h1>
