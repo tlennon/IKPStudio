@@ -91,7 +91,6 @@ headerTemplate.innerHTML = `
         <li><a href="videos.html">Video Tutorials</a></li>
         <li><a href="studio.html">Studio Pics</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
