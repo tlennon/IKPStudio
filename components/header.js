@@ -77,7 +77,7 @@ headerTemplate.innerHTML = `
     <div class="container">
         <div class="row">
             <div class="column">
-                <img id="img-logo" src="/images/logo-transparent.png">
+                <img id="img-logo" src="/images/logo.png">
             </div>
             <div class="column">
                    <h1>Ivory Key Productions</h1>
