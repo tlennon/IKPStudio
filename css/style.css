@@ -5,8 +5,12 @@
 }
 
 body {
-    background: url(https://www.capegynaecologist.co.za/wp-content/uploads/2017/07/top-vid.jpg) no-repeat center center fixed;
-    color: blue background-size: cover;
+    /*    background: url(https://www.capegynaecologist.co.za/wp-content/uploads/2017/07/top-vid.jpg) no-repeat center center fixed;
+*/
+    background: url(https://st.hzcdn.com/fimgs/611182700c5aff7f_3209-w150-h150-b0-p0--modern-bathroom-mirrors.jpg) no-repeat center center fixed;
+    /*url(https://static.vecteezy.com/system/resources/previews/000/256/356/non_2x/abstract-grey-geometric-polygon-background-vector.jpg) no-repeat center fixed;*/
+    background: color: blue;
+    background-size: cover;
 }
 
 h1 {
@@ -89,14 +93,14 @@ img {
     font: bolder;
 }
 
-span.reviewer{
-    font-family:'Lucida Calligraphy';
-    font-size:20px;
-    font-weight:900;      
+span.reviewer {
+    font-family: 'Lucida Calligraphy';
+    font-size: 20px;
+    font-weight: 900;
 }
 
-p.reviewer{
-    font-family:'Lucida Handwriting';
-    font-size:15px;
-    font-weight:bolder;
+p.reviewer {
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    font-weight: bolder;
 }

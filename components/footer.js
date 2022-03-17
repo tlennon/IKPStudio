@@ -48,7 +48,7 @@ footerTemplate.innerHTML = `
       <li><a href="contact.html">Contact</a></li>
     </ul> 
     <ul class="social-row"> -->
-      <li>Ivory Key Productions - Copyright &copy; 2022 <li>
+      <li>Copyright &copy; 2022 <li>
 <!--
       <li><a href="https://github.com/my-github-profile">Facebook <i class="fab fa-github"></i></a></li>
       <li><a href="https://twitter.com/my-twitter-profile">Twitter<i class="fab fa-twitter"></i></a></li>
