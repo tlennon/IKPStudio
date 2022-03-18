@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Ivory Key Productions</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 50%;
+        }
+
+            #myImg:hover {
+                opacity: 0.7;
+            }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content, #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header-component></header-component>
+    <div class="container mt-2">
+
+        <h3 style="text-align:center">Partial List of Equipment</h3>
+        <h6 style="text-align:center"><em>(click to enlarge)</em></h6>
+
+        <img id="myImg1" src="http://www.samsontech.com/site_media/cms/images/product/uncategorized-brand/uncategorized_group/uncategorized/resolv-50a/SARES50Alegacy_image_4.jpg"
+             alt="Sanson 50a" style="width:17%;max-width:300px">
+        <img id="myImg2" src="https://www.yamaha-keyboard-guide.com/images/xyamaha-motif-es8.jpg.pagespeed.ic.BPDI_EJAC1.jpg"
+             alt="Motif ES8" style="width:17%;max-width:300px">
+        <img id="myImg3" src="https://static.roland.com/assets/images/products/main/vs_2000cd_top_main.jpg"
+             alt="VS-2000CD" style="width:17%;max-width:300px">
+        <img id="myImg4" src="https://static.roland.com/assets/images/products/main/varios_front_main.jpg"
+             alt="Varios" style="width:17%;max-width:300px">
+        <img id="myImg5" src="https://m.media-amazon.com/images/I/71fr5C1RECL._AC_SL1000_.jpg"
+             alt="Kore 2" style="width:17%;max-width:300px">
+        <img id="myImg6" src="https://mackie.com/img/pic_product/mcu-pro_group_front_0_0.jpg"
+             alt="MCU Pro" style="width:17%;max-width:300px">
+        <img id="myImg7" src="https://www.dynaudio.com/media/9484/dynaudio-bm15a-halfprofile.png?mode=max&width=0&height=760&format=jpg&bgcolor=25282c"
+             alt="BM 15A" style="width:17%;max-width:300px">
+
+
+        <!-- The Modal Sanson 50 -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption">"Motif ES8"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg1");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal Motif ES8 -->
+        <div id="myModal2" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02">
+            <div id="caption2">Motif ES8</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal2");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg2");
+            var modalImg = document.getElementById("img02");
+            var captionText = document.getElementById("caption2");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[1];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal VS-2000CD -->
+        <div id="myModal3" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img03">
+            <div id="caption2">"VS-2000CD"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal3");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg3");
+            var modalImg = document.getElementById("img03");
+            var captionText = document.getElementById("caption3");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[2];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal Varios -->
+        <div id="myModal4" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img04">
+            <div id="caption4">"VS-2000CD"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal4");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg4");
+            var modalImg = document.getElementById("img04");
+            var captionText = document.getElementById("caption4");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[3];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal Varios -->
+        <div id="myModal5" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img05">
+            <div id="caption5">"Kore 2"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal5");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg5");
+            var modalImg = document.getElementById("img05");
+            var captionText = document.getElementById("caption5");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[4];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal MCU Pro -->
+        <div id="myModal6" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img06">
+            <div id="caption6">"MCU Pro"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal6");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg6");
+            var modalImg = document.getElementById("img06");
+            var captionText = document.getElementById("caption6");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[5];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal MCU Pro -->
+        <div id="myModal7" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img07">
+            <div id="caption7">"MCU Pro"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal7");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg7");
+            var modalImg = document.getElementById("img07");
+            var captionText = document.getElementById("caption7");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[6];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+    </div>
+</body>
+</html>﻿

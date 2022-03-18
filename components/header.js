@@ -11,7 +11,7 @@ headerTemplate.innerHTML = `
     }
 
     ul {
-      padding: 0;
+      padding: 10;
     }
     
     ul li {
@@ -90,6 +90,7 @@ headerTemplate.innerHTML = `
         <li><a href="index.html">Home</a></li>
         <li><a href="videos.html">Video Tutorials</a></li>
         <li><a href="studio.html">Studio Pics</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
