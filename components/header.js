@@ -52,7 +52,7 @@ headerTemplate.innerHTML = `
 
 .column {
   float: left;
-  width: 50%;
+  width: 65%;
   padding: 10px;
   height: 30px; /* Should be removed. Only for demonstration */
 
@@ -65,10 +65,11 @@ headerTemplate.innerHTML = `
 }
 
 #img-logo {
-    width: 100px; 
+    width: 180px; 
     height: 80px; 
-    margin-top: 20px; 
-    padding: 10;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 0;
     object-fit: cover ;
 }
 
@@ -77,7 +78,8 @@ headerTemplate.innerHTML = `
     <div class="container">
         <div class="row">
             <div class="column">
-                <img id="img-logo" src="images/logo.PNG">
+<!--                <img id="img-logo" src="images/logo.PNG"> -->
+                <img id="img-logo" src="images/music_staff_transparent.png">
             </div>
             <div class="column">
                 <!-- <h1>Ivory Key Productions</h1> -->
