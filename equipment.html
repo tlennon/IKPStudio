@@ -121,21 +121,61 @@
 
         <h3 style="text-align:center">Partial List of Equipment</h3>
         <h6 style="text-align:center"><em>(click to enlarge)</em></h6>
-
-        <img id="myImg1" src="images/equipment/Sanson 50a.jpg"
-             alt="Sanson 50a" style="width:17%;max-width:300px">
-        <img id="myImg2" src="images/equipment/Motif ES8.jpg"
-             alt="Motif ES8" style="width:17%;max-width:300px">
-        <img id="myImg3" src="images/equipment/VS-2000CD.jpg"
-             alt="VS-2000CD" style="width:17%;max-width:300px">
-        <img id="myImg4" src="images/equipment/Varios.jpg"
-             alt="Varios" style="width:17%;max-width:300px">
-        <img id="myImg5" src="images/equipment/Kore 2.jpg"
-             alt="Kore 2" style="width:17%;max-width:300px">
-        <img id="myImg6" src="images/equipment/MCU Pro.jpg"
-             alt="MCU Pro" style="width:17%;max-width:300px">
-        <img id="myImg7" src="images/equipment/BM 15A.jpeg"
-             alt="BM 15A" style="width:17%;max-width:300px">
+        <div class="row">
+            <div class="col-sm-2">
+                <p style="text-align:center">Samson Resolve 50a Monitors</p>
+                <img id="myImg1" src="images/equipment/Sanson 50a.jpg">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">Motif ES8</p>
+                <img id="myImg2" src="images/equipment/Motif ES8.jpg">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">Roland VS-2000CD</p>
+                <img id="myImg3" src="images/equipment/VS-2000CD.jpg"
+                     alt="VS-2000CD">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">Roland VariOS Open System Module</p>
+                <img id="myImg4" src="images/equipment/Varios.jpg"
+                     alt="Varios">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">Native Instruments Kore 2</p>
+                <img id="myImg5" src="images/equipment/Kore 2.jpg"
+                     alt="Kore 2">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">Mackie MCU Pro</p>
+                <img id="myImg6" src="images/equipment/MCU Pro.jpg"
+                     alt="MCU Pro">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">Dynaudio BM15A Monitors</p>
+                <img id="myImg7" src="images/equipment/BM 15A.jpeg"
+                     alt="BM 15A">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">Korg DW 8000</p>
+                <img id="myImg8" src="images/equipment/dw8000.jpg"
+                     alt="Korg DW 800">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">Casio CZ 5000</p>
+                <img id="myImg9" src="images/equipment/casio_cz5000_alt2.jpg"
+                     alt="Casio CZ 5000">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">M-Audio Axiom Controller</p>
+                <img id="myImg10" src="images/equipment/m-audio-axiom.jpg"
+                     alt="M-Audio Axiom">
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align:center">Crate Bass Speaker</p>
+                <img id="myImg11" src="images/equipment/crate bass speaker.jpg"
+                     alt="Crate Bass Speaker">
+            </div>
+        </div>
 
 
         <!-- The Modal Sanson 50 -->
@@ -262,7 +302,7 @@
         </script>
 
 
-        <!-- The Modal Varios -->
+        <!-- The Modal NI Kore -->
         <div id="myModal5" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="img05">
@@ -324,11 +364,11 @@
         </script>
 
 
-        <!-- The Modal MCU Pro -->
+        <!-- The Modal BA 15 Monitors  -->
         <div id="myModal7" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="img07">
-            <div id="caption7">"MCU Pro"</div>
+            <div id="caption7">"BA 15 Monitors "</div>
         </div>
 
         <script>
@@ -347,6 +387,130 @@
 
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[6];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal Korg DW 8000 -->
+        <div id="myModal8" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img08">
+            <div id="caption8">"Korg DW 8000"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal8");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg8");
+            var modalImg = document.getElementById("img08");
+            var captionText = document.getElementById("caption8");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[7];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal Casio CZ 5000 -->
+        <div id="myModal9" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img09">
+            <div id="caption9">"Casio CZ 5000"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal9");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg9");
+            var modalImg = document.getElementById("img09");
+            var captionText = document.getElementById("caption9");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[8];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal M-Audio Axiom -->
+        <div id="myModal10" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img010">
+            <div id="caption10">"M-Audio Asiom"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal10");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg10");
+            var modalImg = document.getElementById("img010");
+            var captionText = document.getElementById("caption10");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[9];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+
+        <!-- The Modal M-Audio Axiom -->
+        <div id="myModal11" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img011">
+            <div id="caption11">"M-Audio Asiom"</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal11");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg11");
+            var modalImg = document.getElementById("img011");
+            var captionText = document.getElementById("caption11");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[10  ];
 
             // When the user clicks on <span> (x), close the modal
             span.onclick = function () {
