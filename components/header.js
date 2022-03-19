@@ -80,8 +80,10 @@ headerTemplate.innerHTML = `
                 <img id="img-logo" src="images/logo.PNG">
             </div>
             <div class="column">
-                   <h1>Ivory Key Productions</h1>
-                   <h4>Audio Home Music Studio Services</h4>
+                <!-- <h1>Ivory Key Productions</h1> -->
+    <h1 style="font-family:'Brush Script MT';font-weight:bold;font-size: 48px;line-height:5px">Ivory Key Productions</h1>
+
+    <h4 style="line-height:2px;">Audio Home Music Studio Services</h4>
             </div>
         </div>
     </div>
