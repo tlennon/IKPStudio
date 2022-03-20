@@ -42,18 +42,21 @@ footerTemplate.innerHTML = `
     }
   </style>
   <footer>
-    <ul class="social-row">
-     <!--//  <li><a href="about.html">About</a></li>
+    <!--<ul class="social-row">
+       <li><a href="about.html">About</a></li>
       <li><a href="studio.html">Studio</a></li>
       <li><a href="contact.html">Contact</a></li>
-    </ul> 
-    <ul class="social-row"> -->
-      <li>Copyright &copy; 2022 <li>
-<!--
-      <li><a href="https://github.com/my-github-profile">Facebook <i class="fab fa-github"></i></a></li>
-      <li><a href="https://twitter.com/my-twitter-profile">Twitter<i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/my-linkedin-profile"><i class="fab fa-linkedin"></i></a></li>
--->
+    </ul> -->
+    <ul class="social-row">
+      <li>Copyright &copy; 2022 </li>
+
+      <li><a href="https://www.facebook.com/tlennon1" target="_blank">
+            Facebook<i class="fab fa-github"></i></a></li>
+      <li><a href="https://twitter.com/tlennon1" target="_blank">
+            Twitter<i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://soundcloud.com/tlennon" target="_blank">
+            Soundcloud<i class="fab fa-linkedin"></i></a></li>
+
     </ul>
   </footer>
 `;
