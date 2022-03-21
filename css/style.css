@@ -7,9 +7,8 @@
 body {
     /*    background: url(https://www.capegynaecologist.co.za/wp-content/uploads/2017/07/top-vid.jpg) no-repeat center center fixed;
 */
-    background: url(https://st.hzcdn.com/fimgs/611182700c5aff7f_3209-w150-h150-b0-p0--modern-bathroom-mirrors.jpg) no-repeat center center fixed;
-    /*url(https://static.vecteezy.com/system/resources/previews/000/256/356/non_2x/abstract-grey-geometric-polygon-background-vector.jpg) no-repeat center fixed;*/
-    background: color: blue;
+    background: url(../images/page_background.jpg) no-repeat center fixed;
+    /*background: url(https://st.hzcdn.com/fimgs/611182700c5aff7f_3209-w150-h150-b0-p0--modern-bathroom-mirrors.jpg); no-repeat; center; fixed;*/
     background-size: cover;
 }
 
@@ -53,9 +52,9 @@ a:hover {
 
 /*Contact page information*/
 p.contact {
-    line-height: 15px;
-    font-size: x-large;
-    font-family: "Times New Roman", Times, serif;
+    line-height: 20px;
+/*    font-size: x-large;
+*/    font-family: "Times New Roman", Times, serif;
     margin-left: 15px;
     margin-top: 15px;
 }
